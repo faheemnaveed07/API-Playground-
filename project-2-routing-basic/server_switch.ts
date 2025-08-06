@@ -26,5 +26,6 @@ async function handler(req:Request){
           default:
             return new Response("Not found",{headers:{"content-type":"text/plain"},status:404});
   }
+}
 // deno-lint-ignore no-unreachable
 Deno.serve({handler});
